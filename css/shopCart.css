@@ -1,0 +1,204 @@
+
+.header {
+    position: static;
+}
+#safeShop {
+    text-align: center;
+    padding: 6px 0;
+    position: relative;
+    background-color: #fff;
+}
+#safeShop > p {
+    display: inline-block;
+    width: 240px;
+    position: relative;
+    font-size:13px;
+}
+#safeShop > p::before {
+    position: absolute;
+    top: 1px;
+    left: -20px;
+    content: '';
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background: url(../images/safe_icon.png) no-repeat;
+    background-size: 18px 18px;
+}
+#shoppCart {
+    margin-top:10px;
+    border: 1px solid #e0e0e0;
+}
+#shoppCart > .title {
+    background-color: #fff;
+    position: relative;
+    padding:0 10px 0 54px;
+    line-height: 36px;
+}
+#shoppCart > .title .icon-checkbox {
+    top: 8px;
+}
+#shoppCart > .title a {
+    color: #d8505c;
+    float: right;
+    font-size: 12px;
+}
+#shoppCart .products {
+    margin-bottom: 10px;
+}
+#shoppCart .check-products {
+    position: relative;
+    padding: 10px;
+    background-color: #fff;
+    border-top:1px solid #e0e0e0;
+    padding-left: 36px;
+    font-size:0;
+}
+
+#shoppCart .check-products a {
+    float: left;
+    padding-right:10px;
+}
+#shoppCart  .check-products img {
+    width: 80px;
+    height: 80px;
+    
+}
+#shoppCart .check-products p {
+    font-size: 13px;
+}
+#shoppCart .check-products p:first-of-type {
+    margin-bottom: 18px;
+}
+#shoppCart .check-products p:nth-of-type(2) {
+    font-size:14px;
+}
+#shoppCart .check-products span {
+    display: inline-block;
+    width: 32px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    cursor: pointer;
+}
+#shoppCart .check-products input[type="text"] {
+    display: inline-block;
+    width: 32px;
+    height: 24px;
+    vertical-align: top;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+#shoppCart .icon-delete-top {
+    position: absolute;
+    width: 18px;
+    height: 4px;
+    background-image: url(../images/delete_up.png);
+    background-size: 18px 4px;
+    bottom: 24px;
+    right: 10px;
+}
+#shoppCart .icon-delete-down {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/delete_down.png);
+    background-size: 18px 18px;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+/*结算*/
+#accounts {
+    width: 100%;
+    position: fixed;
+    bottom:0;
+    left:0;
+    height: 62px;
+    background-color: rgba(0,0,0,.8);
+    color: #fff;
+    padding-left: 80px;
+}
+#accounts > .checkAll {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 80px;
+    height: 62px;
+    padding-left:36px;
+}
+#accounts > .checkAll i {
+    checked: checked;
+}
+#accounts > .checkAll p {
+    line-height: 62px;
+}
+#accounts > .sum {
+    float: left;
+    height: 62px;
+    width: 100%;
+    padding-top:8px;
+}
+#accounts > .sum > p:first-child {
+    font-size: 16px;
+    line-height: 36px;
+}
+#accounts > .sum > p:last-child {
+    font-size: 12px;
+    line-height: 14px;
+}
+#accounts .accounts {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 62px;
+    background-color: #d8505c;
+    text-align: center;
+    color: #fff;
+    line-height:62px;
+    font-size: 18px;
+}
+/*删除*/
+#delete {
+    width:100%;
+    margin: 0 auto;
+    height:100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+    padding:0 8%;
+    display: none;
+}
+#delete div{
+    width: 100%;
+    border-radius: 4px;
+    margin: 0 auto;
+    background-color: #fff;
+    font-size:0;
+    padding-bottom:10px;
+    color: #888;
+}
+#delete p {
+    font-size: 16px;
+    line-height: 80px;
+    border-bottom:1px solid #e0e0e0;
+    margin-bottom:10px;
+}
+#delete span{
+    width: 50%;
+    height: 36px;
+    border: 1px solid #e0e0e0;
+    display: inline-block;
+    margin: 0 auto;
+    font-size:16px;
+    line-height:36px;
+}
+#delete span:nth-of-type(2){
+    background-color: #d8505c;
+    color: #fff;
+}

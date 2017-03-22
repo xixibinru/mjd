@@ -1,0 +1,85 @@
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+/**
+*  头部
+ */
+
+/**
+*  主要产品
+ */
+#category {
+    position: relative;
+    width:100%;
+    height: 100%;
+}
+/*产品分类*/
+#category .category-item {
+    width:90px;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    padding-top:44px;
+
+}
+#category .category-item a {
+    height: 50px;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    background-color: #f3f4f6;
+    text-align: center;
+    line-height:50px;
+    font-size:12px;
+}
+#category .category-item .current a {
+    background-color: #fff;
+    color: #f15353;
+}
+/*产品内容*/
+#category .category-content {
+    padding: 54px 10px 0 100px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/*广告图片*/
+#category .category-content-banner{
+    width:100%;
+    margin-bottom:20px;
+}
+#category .category-content-banner a {
+    width: 100%;
+}
+#category .category-content-banner img {
+    width: 100%;
+}
+/*产品介绍*/
+#category .category-content-main {
+    width: 100%;
+}
+#category .category-content-main > h3 {
+    color: #888;
+    font-size:14px;
+    padding-bottom:10px;
+}
+#category .category-content-main li {
+    width: 33.3%;
+    margin: 0 auto;
+    float: left;
+    text-align: center;
+}
+#category .category-content-main li img {
+    width: 62px;
+    height: 62px;
+}
+#category .category-content-main li p {
+    line-height:30px;
+}

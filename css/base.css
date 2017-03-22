@@ -1,0 +1,122 @@
+*,::before,:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 14px;
+    color: #000;
+    background-color: #f5f5f5;
+}
+h3 {
+    font-weight: 400;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+img {
+    vertical-align: middle;
+}
+ul,
+ol{
+    list-style: none;
+}
+input,textarea {
+    border: none;
+    outline:none;
+    resize: none;
+    -webkit-appearance: none;
+}
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.container {
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+}
+[class^="icon-"],
+[class*="icon-"] {
+    background-image: url(../images/sprites.png);
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+}
+
+/*头部区域公共部分*/
+.header {
+    height: 44px;
+    position: absolute;
+    border-bottom: 1px solid #e0e0e0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: url(../images/header-bg.png) repeat-x;
+}
+.header .icon-back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:40px;
+    height: 44px;
+    background-position: -20px 0;
+    padding: 12px 10px;
+    background-origin: content-box;
+    background-clip: content-box;
+
+}
+.header h2 {
+    font-size: 16px;
+    text-align: center;
+    line-height:44px;
+    font-weight: 400;
+}
+.header > form {
+    width:100%;
+    padding: 6px 40px;
+}
+.header > form > input {
+    width: 100%;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid #bfbfbf;
+    padding-left:10px;
+}
+.header .icon-menu {
+    width: 40px;
+    height: 44px;
+    padding: 12px 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-position: -60px 0;
+    background-clip: content-box;
+    background-origin: content-box;
+    cursor: pointer;
+}
+.icon-checkbox {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background-position: -180px -90px;
+}
+.icon-checkbox:checked {
+    background-position: -180px -70px;
+}
+.icon-JD {
+    position: absolute;
+    left:36px;
+    top:13px;
+    width: 15px;
+    height: 13px;
+    background-position: 0 0;
+    background-size: 120px 120px;
+}
